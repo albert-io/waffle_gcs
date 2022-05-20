@@ -38,8 +38,8 @@ defmodule Waffle.Storage.Google.CloudStorage.MixProject do
   defp deps do
     [
       {:waffle, "~> 1.1"},
-      {:goth, "~> 1.1"},
-      {:google_api_storage, "~> 0.14"},
+      {:goth, "~> 1.1", runtime: false},
+      {:google_api_storage, "~> 0.14", runtime: false},
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false},
     ]
   end
